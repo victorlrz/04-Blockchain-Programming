@@ -83,3 +83,19 @@ In order to implement customer WhiteList, we create a second contract this contr
 - function whitelistAdress() to add someone (an adress) to the white list
 
 Then we just inherit this contract on EIP20 and implement it on differents transaction functions.
+
+Implement multi level distribution:
+	in EIP20 contract we create:
+    
+    function MultiDistribution(adress,level)
+    
+We have 3 level of distribution, 
+- First one deliver 20 tokens to the adress
+- Second one 40 
+- Third one 80
+
+This function works well (checked with balanceOf function)
+
+## Air drop functions (not implemented)
+
+## Deploy to a testnet, contract deployed on rinkeby and tokens sent to the teacher and Valentine
