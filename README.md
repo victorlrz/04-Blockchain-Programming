@@ -25,9 +25,14 @@ You can create a bare project template, but for those just getting started, you 
 
 Create a new directory for your Truffle project:
 
-mkdir MetaCoin cd MetaCoin Download ("unbox") the MetaCoin box:
+    mkdir MetaCoin 
+    cd MetaCoin 
 
-truffle unbox metacoin Note: You can use the truffle unbox command to download any of the other Truffle Boxes.
+Download ("unbox") the MetaCoin box:
+
+    truffle unbox metacoin 
+
+> Note: You can use the truffle unbox command to download any of the other Truffle Boxes.
 
 > Note: To create a bare Truffle project with no smart contracts included, use truffle init.
 
@@ -37,10 +42,10 @@ Once this operation is completed, you'll now have a project structure with the f
 
 contracts/: Directory for Solidity contracts migrations/: Directory for scriptable deployment files test/: Directory for test files for testing your application and contracts truffle-config.js: Truffle configuration file
 
-Command
+Command:
 To compile a Truffle project, change to the root of the directory where the project is located and then type the following into a terminal:
 
-truffle compile
+truffle compile:
 Upon first run, all contracts will be compiled. Upon subsequent runs, Truffle will compile only the contracts that have been changed since the last compile. If you'd like to override this behavior, run the above command with the --all option.
 
 ## Create an ERC20 token contract
@@ -52,21 +57,21 @@ We execute the followings command:
 
     truffle develop
     truffle compile 
-> (in order to compile our contracts on ganache, when the contracts are compiled we can see deployed
-on ganache contract interface)
+> in order to compile our contracts on ganache, when the contracts are compiled we can see deployed
+on ganache contract interface
 
     truffle migrate 
-> (we migrate our contract to ganache, remix and Metamask)
+> we migrate our contract to ganache, remix and Metamask
 
     truffle test 
-> (in order to do some tests before deploy the contract on a testnet
+> in order to do some tests before deploy the contract on a testnet
 
 ## Migrate to ganache
 
 We use the function
 
     truffle migrate
-> (after launching ganache)
+> after launching ganache
 
 We copy the first account key and import it in metamask to test our contract with remix.
 
