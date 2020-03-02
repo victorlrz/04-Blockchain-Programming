@@ -47,6 +47,38 @@ To compile a Truffle project, change to the root of the directory where the proj
 truffle compile
 Upon first run, all contracts will be compiled. Upon subsequent runs, Truffle will compile only the contracts that have been changed since the last compile. If you'd like to override this behavior, run the above command with the --all option.
 
+## Create an ERC20 token contract
 
+We use and implement the different functions from the ConsenSys repository:
+https://github.com/ConsenSys/Tokens/blob/fdf687c69d998266a95f15216b1955a4965a0a6d/contracts/eip20/EIP20.sol
 
+We execute the followings command:
 
+    truffle develop
+    truffle compile 
+> (in order to compile our contracts on ganache, when the contracts are compiled we can see deployed
+on ganache contract interface)
+
+    truffle migrate 
+> (we migrate our contract to ganache, remix and Metamask)
+
+    truffle test 
+> (in order to do some tests before deploy the contract on a testnet
+
+## Migrate to ganache
+
+We use the function
+
+    truffle migrate
+> (after launching ganache)
+
+We copy the first account key and import it in metamask to test our contract with remix.
+
+## Implement customer white listing
+
+In order to implement customer WhiteList, we create a second contract this contract have the following structure:
+- function changeOwner() to change the owner of the WhiteList
+- function getOwner() to get the owner of the WhiteList
+- function whitelistAdress() to add someone (an adress) to the white list
+
+Then we just inherit this contract on EIP20 and implement it on differents transaction functions.
