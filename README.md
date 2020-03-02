@@ -100,6 +100,6 @@ This function works well (checked with balanceOf function)
 
 ## Deploy to a testnet, contract deployed on rinkeby and tokens sent to the teacher and Valentine
 
-My Adress : 0x16f8E8a2bFF91679f81230582Ed3704Df049B06a
-Adress receiver 1 : 0x6B588B128b49A59EB5e9F76FdC0F8D5BEfec847D
-Adress receiver 2 : 0x6F891Cc103F5F320C129Baeb6622f52E15522527
+- My Address : 0x16f8E8a2bFF91679f81230582Ed3704Df049B06a
+- Address receiver 1 : 0x6B588B128b49A59EB5e9F76FdC0F8D5BEfec847D
+- Address receiver 2 : 0x6F891Cc103F5F320C129Baeb6622f52E15522527
