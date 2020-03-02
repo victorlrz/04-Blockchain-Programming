@@ -37,10 +37,6 @@ Once this operation is completed, you'll now have a project structure with the f
 
 contracts/: Directory for Solidity contracts migrations/: Directory for scriptable deployment files test/: Directory for test files for testing your application and contracts truffle-config.js: Truffle configuration file
 
-Command To compile a Truffle project, change to the root of the directory where the project is located and then type the following into a terminal:
-
-truffle compile Upon first run, all contracts will be compiled. Upon subsequent runs, Truffle will compile only the contracts that have been changed since the last compile. If you'd like to override this behavior, run the above command with the --all option.
-
 Command
 To compile a Truffle project, change to the root of the directory where the project is located and then type the following into a terminal:
 
